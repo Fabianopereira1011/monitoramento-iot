@@ -27,7 +27,7 @@ const Container = () => {
                 <Card title="Sensores IOT" balance={'0 - Conectados'} icon={0} />
                 <Card title="Fluviometro" balance={'87 mm'} icon={1} />
                 <Card title="Regioes alargadas" balance={'0 ocorrencia'} icon={2} />
-                <Card title="maps" balance={339.0790} icon={3} />
+                <Card title="maps" balance={339.0790} icon={2} />
 
             </div>
 
