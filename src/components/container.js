@@ -24,11 +24,10 @@ const Container = () => {
             </div>
 
             <div className="flex   p-4 space-x-3">
-                <Card title="Sensores IOT" balance={'0 - Conectados'} icon={0} />
-                <Card title="Fluviometro" balance={'87 mm'} icon={1} />
-                <Card title="Regioes alargadas" balance={'0 ocorrencia'} icon={2} />
-                <Card title="maps" balance={339.0790} icon={2} />
-
+                <Card title="Sensores IOT" balance={'0 - Conectados'} icon={0}/>
+                <Card title="Fluviometro" balance={'87 mm'} icon={1}/>
+                <Card title="Regioes alargadas" balance={'0 ocorrencia'} icon={3}/>
+                <Card title="maps" balance={'----'} icon={2}/>
             </div>
 
             <div className="flex  ml-3 mt-6 space-x-6  mr-4">
