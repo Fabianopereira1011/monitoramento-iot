@@ -10,18 +10,18 @@ import AnchorIcon from '@mui/icons-material/Anchor';
 const Style = "text-white text-xs"
 
 
-const arrayIcon = [
-                    <AllOutIcon fontSize="small" className={Style} />, 
-                    <DoneAllIcon fontSize="small" className={Style} />, 
-                    <ControlCameraIcon fontSize="small" className={Style} />, 
-                    <AnchorIcon fontSize="small" className={Style} />
-                    ]
-const Color = [
-                "from-indigo-500 to-blue-500", 
-                "from-blue-400 to-blue-300", 
-                "from-green-500 to-green-400", 
-                "from-yellow-600 to-yellow-500"
-            ]
+const arrayIcon = {
+                    0 : <AllOutIcon fontSize="small" className={Style} />, 
+                    1 : <DoneAllIcon fontSize="small" className={Style} />, 
+                    2 : <ControlCameraIcon fontSize="small" className={Style} />, 
+                    3 : <AnchorIcon fontSize="small" className={Style} />
+}
+const Color = {
+               0 : "from-indigo-500 to-blue-500", 
+               1 : "from-blue-400 to-blue-300", 
+               2 : "from-green-500 to-green-400", 
+               3 : "from-yellow-600 to-yellow-500"
+}
 
 
 const Card = ({title, icon, balance}) => {
