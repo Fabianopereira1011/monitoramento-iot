@@ -9,6 +9,7 @@ import AnchorIcon from '@mui/icons-material/Anchor';
 
 const Style = "text-white text-xs"
 
+
 const arrayIcon = [
                     <AllOutIcon fontSize="small" className={Style} />, 
                     <DoneAllIcon fontSize="small" className={Style} />, 
@@ -24,13 +25,15 @@ const Color = [
 
 
 const Card = ({title, icon, balance}) => {
+        const gradientColor = Color[icon] ;
+        const iconStatus = arrayIcon[icon];
 
     return (
-        <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-3/12  p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${Color[props.icon]}`} >
+        <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-3/12  p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${gradientColor}`} >
             <div className="flex justify-between">
                 <div></div>
                 <div className=" w-7  h-5 flex items-center justify-center  bg-gray-300 rounded-xl m-1  bg-opacity-30">
-                    arrayIcon[{icon}] 
+                    {iconStatus}
                 </div>
             </div>
             <p className="text-gray-200 text-xs  ">

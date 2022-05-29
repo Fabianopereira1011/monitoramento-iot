@@ -5,9 +5,6 @@ import Middle from './Midlle'
 import Chartline from './chartLine'
 
 
-
-
-
 const Container = () => {
     return (
         <div className=" bg-gradient-to-b from-gray-100 to-blue-400 h-full " >
