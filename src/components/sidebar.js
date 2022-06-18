@@ -17,41 +17,21 @@ const Sidebar = () => {
                     <h1 className="text-gray-400">Menu</h1>
 
                     <div className=''>
-                        <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
+                        <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
                                     <ControlCameraIcon />
-                                    <a href='/sensores/iot' className="text-gray-600  " >Painel</a>
-                        </div>
-                    </div>
-                    
-                    <div className=''>
-                        <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
-                                    <ControlCameraIcon />
-                                    <a href='/sensores/iot' className="text-gray-600  " >Sensore</a>
-                        </div>
-                    </div>
-
-                    <div className=''>
-                        <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
-                                    <ControlCameraIcon />
-                                    <a href='/sensores/iot' className="text-gray-600  " >Fluviometro</a>
+                                    <a href='/' className="text-gray-600  " >Painel</a>
                         </div>
                     </div>
 
 
                     <div className=''>
-                        <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
+                        <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
                                     <ControlCameraIcon />
-                                    <a href='/sensores/iot' className="text-gray-600  " >Desenvolvedores</a>
+                                    <a href='/about' className="text-gray-600  " >Desenvolvedores</a>
                         </div>
                     </div>
 
 
-                    <div className=''>
-                        <div className="flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
-                                    <ControlCameraIcon />
-                                    <a href='/sensores/iot' className="text-gray-600  " >Painel</a>
-                        </div>
-                    </div>
 
                 </div>
                 
