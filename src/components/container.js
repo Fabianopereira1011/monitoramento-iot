@@ -24,11 +24,9 @@ const Container = () => {
 
     useEffect(()=>{
         setInterval(() => {
-            fetchData();
+            //fetchData();
           }, 2000);
-        
-    },
-    []);
+    },[]);
 
     return (
         <div className=" bg-gradient-to-b from-gray-100 to-blue-400 h-full " >
