@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const LoggingComponent = () => {
   return (
-    <div class="text-7xl italic flex flex-col items-center justify-center h-screen w-full bg-cyan-400">
+    <div className="text-7xl italic flex flex-col items-center justify-center h-screen w-full bg-cyan-400">
         <Link href="/api/auth/login">Login</Link>
     </div>
   )
