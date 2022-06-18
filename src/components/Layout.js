@@ -10,11 +10,11 @@ const Painel = (props) => {
   const {user , error , isLoading} = useUser();
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>{error.message}</div>;
+  //  if (error) return <div>{error.message}</div>;
   
-if(user)
+  if(!user) return <LoggingComponent/>
   return (
-     <div>
+     user && <div>
         <div className="flex w-screen h-screen bg-gradient-to-tr from-transparent to to-blue-200">
           <Sidebar/>
                 <div className='w-screen'>
@@ -24,7 +24,7 @@ if(user)
         </div>
       </div>
   )
-    else return <LoggingComponent/>
+  if(!user) return <LoggingComponent/>
    
 }
 
