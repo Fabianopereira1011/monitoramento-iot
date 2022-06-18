@@ -7,7 +7,7 @@ import Chartline from './chartLine'
 
 const Container = () => {
     const [data , setData ] = useState('Conectando. .  .');
-    const [count, setCount] = useState(0);
+    
 
     const fetchData =async () => {
             const dataApi = await fetch("https://tcc-group4.herokuapp.com/api/v8/sensors");
