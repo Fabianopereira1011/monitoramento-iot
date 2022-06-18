@@ -1,5 +1,6 @@
 import React from 'react'
 import ControlCameraIcon from '@mui/icons-material/ControlCamera';
+import Link from 'next/link';
 
 const Sidebar = () => {
     return (
@@ -19,7 +20,7 @@ const Sidebar = () => {
                     <div className=''>
                         <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
                                     <ControlCameraIcon />
-                                    <a href='/' className="text-gray-600  " >Painel</a>
+                                    <Link href='/' className="text-gray-600  " >Painel</Link>
                         </div>
                     </div>
 
@@ -27,7 +28,7 @@ const Sidebar = () => {
                     <div className=''>
                         <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
                                     <ControlCameraIcon />
-                                    <a href='/about' className="text-gray-600  " >Desenvolvedores</a>
+                                    <Link href='/about' className="text-gray-600  " >Desenvolvedores</Link>
                         </div>
                     </div>
 
