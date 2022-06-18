@@ -1,9 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
-const loggingComponent = () => {
+const LoggingComponent = () => {
   return (
-    <div className='flex display-collum'>loggingComponent</div>
+    <div class="text-7xl italic flex flex-col items-center justify-center h-screen w-full bg-cyan-400">
+        <Link href="/api/auth/login">Login</Link>
+    </div>
   )
 }
 
-export default loggingComponent
+export default LoggingComponent

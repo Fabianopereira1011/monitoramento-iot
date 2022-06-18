@@ -4,7 +4,7 @@ import Sidebar from './sidebar'
 import Header from './header'
 import { useUser } from '@auth0/nextjs-auth0'
 import Link from 'next/link'
-
+import LoggingComponent from './loggingComponent'
 
 const Painel = (props) => {
   const {user , error , isLoading} = useUser();
@@ -24,7 +24,8 @@ if(user)
         </div>
       </div>
   )
-    else return <Link href='/api/auth/login'>Login</Link>
+    else return <LoggingComponent/>
+   
 }
 
 
