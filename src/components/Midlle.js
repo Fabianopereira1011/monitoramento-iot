@@ -2,13 +2,13 @@ import React from 'react'
 import { Line } from 'react-chartjs-2';
 
 const data = {
-    labels: ['Sep 19', 'Sep 20', 'Sep 21', 'Sep 22', 'Sep 23', 'Sep24', 'Sep 25'],
+    labels: ['|', '|', '|', '|', '|', '|', '|'],
     datasets: [
         {
-            label: 'Previsão chuva/mm',
+            label: 'maxima dia',
             fill: false,
             lineTension: 0.1,
-            backgroundColor: 'rgba(0, 150, 0)',
+            backgroundColor: 'rgba(0, 0, 220)',
             borderColor: 'rgba(130, 0, 0)',
             borderCapStyle: 'butt',
             borderDash: [],
@@ -18,15 +18,15 @@ const data = {
             pointBackgroundColor: '#00f',
             pointBorderWidth: 1,
             pointHoverRadius: 5,
-            pointHoverBackgroundColor: 'rgba(67, 56, 202)',
+            pointHoverBackgroundColor: 'rgba(0, 0, 202)',
             pointHoverBorderColor: 'rgba(0,220,0,1)',
             pointHoverBorderWidth: 2,
             pointRadius: 4,
             pointHitRadius: 10,
-            data: [12, 10, 6, 6, 6, 7, 7, 8]
+            data: [2, 3, 3, 2, 3, 1, 2]
         },
         {
-            label: 'dados coletados chuva/mm',
+            label: 'media dia',
             fill: false,
             lineTension: 0.1,
             backgroundColor: 'rgba(67, 56, 202)',
@@ -44,7 +44,28 @@ const data = {
             pointHoverBorderWidth: 2,
             pointRadius: 4,
             pointHitRadius: 10,
-            data: [43, 32, 12, 21, 17, 14, 19]
+            data: [1, 3, 2, 1, 2, 1, 2]
+        },
+        {
+            label: 'min dia',
+            fill: false,
+            lineTension: 0.1,
+            backgroundColor: 'rgba(67, 56, 202)',
+            borderColor: 'rgba(0, 0, 202)',
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: 'rgba(120, 0, 0)',
+            pointBackgroundColor: '#fff',
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: 'rgba(67, 56, 202)',
+            pointHoverBorderColor: 'rgba(220,0,0,1)',
+            pointHoverBorderWidth: 2,
+            pointRadius: 4,
+            pointHitRadius: 10,
+            data: [0, 1, 0, 2, 1, 2, 0]
         }
     ]
 };

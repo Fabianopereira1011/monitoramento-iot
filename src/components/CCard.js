@@ -27,7 +27,7 @@ const Card = ({title, icon, balance}) => {
         const iconStatus = arrayIcon[icon];
 
     return (
-        <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-4/12 invisible md:visible p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${gradientColor}`} >
+        <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-full md:w-4/12 p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${gradientColor}`} >
 
             <div className="flex justify-between">
                 <div></div>

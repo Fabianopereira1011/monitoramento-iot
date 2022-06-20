@@ -5,11 +5,11 @@ import Link from 'next/link';
 
 const Sidebar = () => {
     return (
-        <div className="md:w-3/12 w-6/12 h-screen shadow-2xl bg-white">
+        <div className="md:w-3/12 w-2/12 h-screen shadow-2xl bg-white">
             <div className="flex m-7">
-                <p className="text-4xl">Group</p>
+                <p className="text-lg md:text-4xl">Group</p>
                 <hr/>
-                <p className="text-4xl italic text-blue-700">4</p>
+                <p className="text-lg md:text-4xl italic text-blue-700">4</p>
                 <hr className='bg-blue-900 '/>
                 
 
@@ -18,27 +18,33 @@ const Sidebar = () => {
                 <div className="space-y-4" >
                     <h1 className="text-gray-400">Menu</h1>
 
+                    <Link href='/' >
                     <div className=''>
-                        <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
+                        <div className="pt-8 flex p-3 text-gray-700  md:space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
                                     <ControlCameraIcon />
-                                    <Link href='/' className="text-gray-600  " >Painel</Link>
+                                    <div className="text-gray-600  " >Painel</div>
                         </div>
                     </div>
+                    </Link>
 
 
+                    <Link href='/about' >
                     <div className=''>
-                        <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
+                        <div className="pt-8 flex p-3 text-gray-700  md:space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
                                     <ControlCameraIcon />
-                                    <Link href='/about' className="text-gray-600  " >Desenvolvedores</Link>
+                                    <div className="text-gray-600  " >Desenvolvedores</div>
                         </div>
                     </div>
+                    </Link>
 
+                    <Link href='/api/auth/logout'>
                     <div className=''>
-                        <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
+                        <div className="pt-8 flex p-3 text-gray-700  md:space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
                             <DisabledByDefaultIcon />
-                        <Link href='/api/auth/logout' className="text-gray-600  " >Logout</Link>
+                        <div className="text-gray-600  " >Logout</div>
                         </div>
                     </div>
+                    </Link>
 
 
 

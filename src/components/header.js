@@ -10,8 +10,8 @@ const Header =() => {
     <div className="flex shadow-sm bg-white  p-4 justify-between h-xl">
 
         <div className="flex space-x-3  ">
-            <p className='text-blue-800 text-4xl bold'>Sistema de alerta de Enchente</p>
-            <p className="text-gray-400">by Alunos univesp</p>
+            <p className='text-blue-800 text-xl md:text-4xl bold'>Sistema de alerta de Enchente</p>
+            <p className="text-gray-400 text-sm md:text-lg md:m-4">by Alunos univesp</p>
             <CropIcon className="text-gray-300" />
             <DashboardIcon className="text-gray-300" />
         </div>

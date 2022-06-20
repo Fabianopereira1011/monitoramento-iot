@@ -43,15 +43,15 @@ const Container = () => {
 
             </div>
 
-            <div className="flex   p-4 space-x-3 ">
-                <Card title="Sensores IOT" balance={'0 - Conectados'} icon={0}/>
+            <div className="flex-wrap md:flex">
+                <Card title="IA - Ar" balance={'0 - Conectados'} icon={0}/>
                 <Card title="Regioes alargadas" balance={'0 ocorrencia'} icon={3}/>
                 <Card title="maps" balance={'----'} icon={2}/>
             </div>
 
                         {/* flex  ml-3 mt-6 space-x-6  mr-4 */}
-            <div className="flex">
-                <SensorWater waterLevel={3}/> 
+            <div className="flex-wrap md:flex">
+                <SensorWater waterLevel={2}/> 
                 <Middle/>                            
             </div>
 
