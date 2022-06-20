@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Card from './CCard'
 import Middle from './Midlle' 
 import Chartline from './chartLine'
+import SensorWater from './sensorWater'
 
 
 const Container = () => {
@@ -44,20 +45,14 @@ const Container = () => {
 
             <div className="flex   p-4 space-x-3 ">
                 <Card title="Sensores IOT" balance={'0 - Conectados'} icon={0}/>
-                
                 <Card title="Regioes alargadas" balance={'0 ocorrencia'} icon={3}/>
                 <Card title="maps" balance={'----'} icon={2}/>
             </div>
 
-            <div className='text-5xl flex flex-col items-center justify-center'>
-                nivel de agua sensor - 
-                
-                <div>{data}</div>
-                
-            </div>
-
-            <div className="flex  ml-3 mt-6 space-x-6  mr-4">
-                <Middle />                               
+                        {/* flex  ml-3 mt-6 space-x-6  mr-4 */}
+            <div className="flex">
+                <SensorWater waterLevel={3}/> 
+                <Middle/>                            
             </div>
 
         </div>

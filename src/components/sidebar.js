@@ -51,12 +51,14 @@ const Sidebar = () => {
     )
 }
 
-const Acoisa = () =>{
+const Acoisa = ({title, }) =>{
     return(
-            <div className="flex p-3 bg-white text-gray-700  space-x-4 0 hover:bg-gray-50 hover:text-blue-600  cursor-pointer ">
-                                <ControlCameraIcon />
-                                <a href='/sensores/iot' className="text-gray-600  " >Bla bla..</a>
-            </div>
+        <div className=''>
+        <div className="pt-8 flex p-3 text-gray-700  space-x-4 0 hover:bg-gray-300 hover:text-blue-600  cursor-pointer ">
+                    <ControlCameraIcon />
+                    <Link href='/about' className="text-gray-600  " >{title}</Link>
+        </div>
+    </div>
     )
 }
 

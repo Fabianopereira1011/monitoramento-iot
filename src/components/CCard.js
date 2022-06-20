@@ -5,8 +5,6 @@ import DoneAllIcon from '@mui/icons-material/DoneAll';
 import ControlCameraIcon from '@mui/icons-material/ControlCamera';
 import AnchorIcon from '@mui/icons-material/Anchor';
 
-
-
 const Style = "text-white text-xs"
 
 
@@ -17,10 +15,10 @@ const arrayIcon = {
                     3 : <AnchorIcon fontSize="small" className={Style} />
 }
 const Color = {
-               0 : "from-indigo-500 to-blue-500", 
-               1 : "from-blue-400 to-blue-300", 
-               2 : "from-green-500 to-green-400", 
-               3 : "from-yellow-600 to-yellow-500"
+               0 : "from-indigo-600 to-blue-400", 
+               1 : "from-blue-600 to-blue-300", 
+               2 : "from-green-600 to-green-300", 
+               3 : "from-yellow-600 to-yellow-300"
 }
 
 
@@ -29,18 +27,18 @@ const Card = ({title, icon, balance}) => {
         const iconStatus = arrayIcon[icon];
 
     return (
-        <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-3/12  p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${gradientColor}`} >
+        <div className={`transform hover:scale-110 cursor-pointer transition delay-100 w-4/12 invisible md:visible p-2 py-4 shadow-xl  border rounded-xl bg-gradient-to-r ${gradientColor}`} >
 
             <div className="flex justify-between">
                 <div></div>
-                <div className=" w-7  h-5 flex items-center justify-center  bg-gray-300 rounded-xl m-1  bg-opacity-30">
+                <div className=" w-7  h-3 flex items-center justify-center  bg-gray-300 rounded-xl m-1  bg-opacity-30">
                     {iconStatus}
                 </div>
             </div>
-            <p className="text-gray-200 text-xs  ">
+            <p className="text-gray-200 text-xs">
                 {title}
             </p>
-            <p className="text-gray-50 text-lg  font-semibold  ">
+            <p className="text-gray-50 text-lg  font-semibold">
                 {balance} 
             </p>
             <p className="text-gray-300  text-sm ">
