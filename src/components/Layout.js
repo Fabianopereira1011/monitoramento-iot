@@ -15,7 +15,7 @@ const Painel = (props) => {
       if (isLoading) return <div>Loading...</div>;
       if (error) return <div>{error.message}</div>;
       
-      if(user){
+      //if(user){ // auth0 bug, I am still don´t know why.  
           return (
             <div>
                 <div className="flex w-screen h-screen bg-gradient-to-tr from-transparent to to-blue-200">
@@ -26,8 +26,9 @@ const Painel = (props) => {
                         </div>
                 </div>
               </div>
-          )}
-            return <LoggingComponent/>
+          )
+        
+        //    return <LoggingComponent/>
   }
 
 export default Painel

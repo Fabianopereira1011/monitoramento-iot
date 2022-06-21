@@ -14,18 +14,19 @@ const Container = () => {
             const dataApi = await fetch("https://tcc-group4.herokuapp.com/api/v8/sensors");
             const dataJson = await dataApi.json();
             
+            //bellow just for test. 
             console.log("json format");
             console.log(dataJson);
             console.log("O elemento 0 :")
             console.log(dataJson[0].wateLevel);
 
             setData(dataJson[2].wateLevel);
-            //console.log(data );
+            console.log(data );
     }
 
     useEffect(()=>{
         setInterval(() => {
-            //fetchData();
+            fetchData();
           }, 2000);
     },[]);
 
