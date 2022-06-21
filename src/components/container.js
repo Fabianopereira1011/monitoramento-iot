@@ -45,9 +45,9 @@ const Container = () => {
             </div>
 
             <div className="flex-wrap md:flex">
-                <Card title="IA - Ar" balance={'0 - Conectados'} icon={0}/>
+                <Card title="Monitoramento inteligente" balance={'Aracatuba -> sem chuva'} icon={0}/>
                 <Card title="Regioes alargadas" balance={'0 ocorrencia'} icon={3}/>
-                <Card title="maps" balance={'----'} icon={2}/>
+                <Card title="Fluviometro" balance={'Sem conexao'} icon={2}/>
             </div>
 
                         {/* flex  ml-3 mt-6 space-x-6  mr-4 */}
@@ -55,6 +55,7 @@ const Container = () => {
                 <SensorWater waterLevel={2}/> 
                 <Middle/>                            
             </div>
+            <Chartline/>
 
         </div>
     )
