@@ -10,7 +10,7 @@ import LoggingComponent from './loggingComponent'
 
 
 const Painel = (props) => {
-      const {user , error , isLoading} = useUser();
+      //const {user , error , isLoading} = useUser();
       //import { useUser } from '@auth0/nextjs-auth0'
       if (isLoading) return <div>Loading...</div>;
       if (error) return <div>{error.message}</div>;
