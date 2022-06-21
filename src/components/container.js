@@ -20,7 +20,7 @@ const Container = () => {
             console.log("O elemento 0 :")
             console.log(dataJson[0].wateLevel);
 
-            setData(dataJson[2].wateLevel);
+            setData(dataJson[0].wateLevel);
             console.log(data );
     }
 
@@ -52,7 +52,7 @@ const Container = () => {
 
                         {/* flex  ml-3 mt-6 space-x-6  mr-4 */}
             <div className="flex-wrap md:flex">
-                <SensorWater waterLevel={2}/> 
+                <SensorWater waterLevel={data}/> 
                 <Middle/>                            
             </div>
             <Chartline/>
