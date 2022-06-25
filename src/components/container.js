@@ -15,8 +15,8 @@ const Container = () => {
     
 
     const fetchData =async () => {
-            //const dataApi = await fetch("https://tcc-group4.herokuapp.com/api/v8/sensors");
-            const dataApi = await fetch("http://localhost:8080/api/v8/sensors");
+            const dataApi = await fetch("https://tcc-group4.herokuapp.com/api/v8/sensors");
+            //const dataApi = await fetch("http://localhost:8080/api/v8/sensors");
             const dataJson = await dataApi.json();
             console.log(data);
             setData(dataJson);
@@ -31,11 +31,10 @@ const Container = () => {
     }
 
     useEffect(()=>{
-        /*
+        /**/
         setInterval(() => {
             fetchData();
-          }, 10000);*/
-          fetchData();
+          }, 10000);
     },[]);
 
     return (
