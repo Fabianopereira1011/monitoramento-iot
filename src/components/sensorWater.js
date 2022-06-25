@@ -27,7 +27,7 @@ const SensorWater = ({waterLevel}) => {
  
       <div className='text-3xl h-41 m-5 p-5 bg-gradient-to-tr from-cyan-100 to bg-slate-100'>
         <hr/>
-          {waterLevel}
+          water sensor level
           <br/>
           <hr/>
           <div className={`flex 
