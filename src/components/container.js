@@ -34,7 +34,7 @@ const Container = () => {
         /**/
         setInterval(() => {
             fetchData();
-          }, 10000);
+          }, 1500);
     },[]);
 
     return (
