@@ -15,8 +15,8 @@ const Container = () => {
     
 
     const fetchData =async () => {
-            const dataApi = await fetch("https://tcc-group4.herokuapp.com/api/v8/sensors");
-            //const dataApi = await fetch("http://localhost:8080/api/v8/sensors");
+            //const dataApi = await fetch("https://tcc-group4.herokuapp.com/api/v8/sensors");
+            const dataApi = await fetch("http://localhost:8080/api/v8/sensors");
             const dataJson = await dataApi.json();
             console.log(data);
             setData(dataJson);
@@ -31,10 +31,11 @@ const Container = () => {
     }
 
     useEffect(()=>{
-        /**/
+        /*
         setInterval(() => {
             fetchData();
-          }, 2000);
+          }, 10000);*/
+          fetchData();
     },[]);
 
     return (
@@ -76,9 +77,10 @@ const Container = () => {
                         {/* flex  ml-3 mt-6 space-x-6  mr-4 */}
             <div className="flex-wrap md:flex">
                 {data ?
-                data.map((element, index) => {			
+                data.map((element, index) => {	
+                    
                     if(element.id == "sensorAgua"){
-                        return <SensorWater key={element.id} waterLevel={element.waterLevel}/>;
+                        return <SensorWater key={element.id} waterLevel={element.wateLevel}/>;
                         };
                 }): ""
             }
